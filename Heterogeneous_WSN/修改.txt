@@ -1,0 +1,22 @@
+1、utilities.py：维护模块、故障模型、参数    （已修改）
+	把上面这三个修改成4个不同的，作为4种类型的传感器。
+	注意：全局参数还是要一样
+2、scene_generator.py：生成的场景                （已修改）
+	随机分布传感器，但是根据随机生成的坐标位置对传感器分4类。
+5、module_cost                                    （已修改）
+3、simulator.py         （已修改）
+	不同的类型的传感器会有不同的组合，包括维护模块、故障模型、参数，所以config不一样
+4、calculate_cost   （已修改）
+
+下面最主要是 SceneGenerator和WSNSimulation和calculate_total_cost_with_simulation类的使用
+6、genetic(锦标赛选择不算改进)
+9、particle_swarm
+10、simulated_annealing
+8、enhanced_genetic
+
+这个还有可维护性的计算这里要改，那个可靠性的计算按照每个区域来分开计算，最后整合？
+11、evaluation
+
+
+最后：
+先本地跑一下看看正不正确（把迭代次数和种群个数较少试试），然后放在服务器跑
