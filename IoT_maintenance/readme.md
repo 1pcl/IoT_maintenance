@@ -10,7 +10,7 @@ Wireless Sensor Networks (WSNs) are widely deployed in resource-constrained envi
 
 **Scenario Description:**
 In the smart meter reading scenario, the dataset specifies $208$ sensor nodes deployed in a multi-floor residential building. 
-This scenario focuses on automatic meter reading in a modern multi-story residential building. As illustrated in Fig.~\ref{fig:meter_topology}, a total of $208$ smart meter nodes are deployed across $27$ floors. Each node periodically collects and reports electricity consumption data. The scenario is characterized by sparse node distribution, low-frequency data collection, long system lifetime requirements, and relatively low-value individual data packets. 
+This scenario focuses on automatic meter reading in a modern multi-story residential building. As illustrated in Fig. 1, a total of $208$ smart meter nodes are deployed across $27$ floors. Each node periodically collects and reports electricity consumption data. The scenario is characterized by sparse node distribution, low-frequency data collection, long system lifetime requirements, and relatively low-value individual data packets. 
 
 **Topology Structure:**  
 ![Smart Meter Topology](./images/smart_meter_topology.png)
@@ -18,7 +18,7 @@ This scenario focuses on automatic meter reading in a modern multi-story residen
 ### Scenario 2: Animal House Monitoring
 
 **Scenario Description:**
-This scenario involves environmental monitoring in an animal research facility, such as one housing laboratory mice. As shown in Fig.~\ref{fig:animal_topology}, $300$ sensor nodes are deployed across multiple animal rooms to monitor environmental conditions such as temperature and humidity. Given the high value of the animals and the potential economic loss if environmental parameters deviate, including a temperature spike that could cause animal mortality, this scenario features denser node deployment, higher sampling frequency, and higher-value data packets. 
+This scenario involves environmental monitoring in an animal research facility, such as one housing laboratory mice. As shown in Fig.2, $300$ sensor nodes are deployed across multiple animal rooms to monitor environmental conditions such as temperature and humidity. Given the high value of the animals and the potential economic loss if environmental parameters deviate, including a temperature spike that could cause animal mortality, this scenario features denser node deployment, higher sampling frequency, and higher-value data packets. 
 
 **Topology Structure:**  
 ![Animal House Topology](./images/animal_house_topology.png)
@@ -48,6 +48,7 @@ If you need to run this project for recommending maintenance strategy of WSNs, t
 |-- simulated_annealing.py     // Simulated Annealing Algorithm
 |-- evaluation.py            // Evaluation of maintenance strategies
 ```
+
 
 
 
