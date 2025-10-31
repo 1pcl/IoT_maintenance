@@ -1,27 +1,21 @@
 # Maintenance Strategy Recommendation for Wireless Sensor Networks
 
-## Project Background
-
-Wireless Sensor Networks (WSNs) are widely deployed in resource-constrained environments for long-term monitoring and large-scale data collection.   Maintainability is particularly critical in WSNs because they are prone to faults and the cost of post-failure maintenance is often prohibitively high.  However, few studies have provided systematic maintenance strategy at the design stage of WSNs.  In this work, we propose a WSNs maintenance strategy recommendation framework that systematically guides the selection of maintenance methods and the configuration of fault inspection intervals.  To implement this framework, the recommendation task is modeled as a joint optimization problem that minimizes the total cost under budget constraints.  An enhanced Genetic Algorithm (GA) is proposed to solve this joint optimization problem.  The proposed framework is validated in two WSNs scenarios, smart meter reading and animal room monitoring, demonstrating its effectiveness for WSNs maintenance strategy recommendation.   The proposed enhanced GA was compared with GA, Particle Swarm Optimization (PSO), and Simulated Annealing (SA).  In the smart meter scenario, it reduced optimization time by 28%, 52%, and 52%.  For animal monitoring, the time reductions were 34%, 53%, and 54%, respectively.
 
 ## Scenarios
 
-### Scenario 1: Smart Meter Network
+### Scenario: Smart Factory Monitoring
 
 **Scenario Description:**
 In the smart meter reading scenario, the dataset specifies $208$ sensor nodes deployed in a multi-floor residential building. 
 This scenario focuses on automatic meter reading in a modern multi-story residential building. As illustrated in Fig.~\ref{fig:meter_topology}, a total of $208$ smart meter nodes are deployed across $27$ floors. Each node periodically collects and reports electricity consumption data. The scenario is characterized by sparse node distribution, low-frequency data collection, long system lifetime requirements, and relatively low-value individual data packets. 
 
+This scenario addresses the complex maintenance requirements of modern industrial facilities with heterogeneous sensor deployments. As shown in Fig.~\ref{fig:factory_topology}, a total of $400$ sensor nodes are strategically distributed across four specialized monitoring zones within a $500 \times 500$ square meter factory area. The deployment encompasses distinct sensor types with varying characteristics: production equipment monitoring utilizes high-power sensors for real-time equipment status and operational parameters; environmental monitoring employs medium-power sensors for temperature and humidity tracking; security surveillance deploys low-power sensors with reliable long-distance communication; and infrastructure monitoring uses ultra-low-power sensors for periodic status checks of utility systems.
+
+The scenario is characterized by diverse sampling frequencies (ranging from 60 to 1800 seconds), varied data packet sizes (400 to 2000 bytes), and zone-specific failure probabilities reflecting the distinct operational environments. This heterogeneous configuration presents complex maintenance optimization challenges, requiring tailored strategies for each sensor category while respecting the overall system budget of $1,500,000$.
+
 **Topology Structure:**  
 ![Smart Meter Topology](./images/smart_meter_topology.png)
 
-### Scenario 2: Animal House Monitoring
-
-**Scenario Description:**
-This scenario involves environmental monitoring in an animal research facility, such as one housing laboratory mice. As shown in Fig.~\ref{fig:animal_topology}, $300$ sensor nodes are deployed across multiple animal rooms to monitor environmental conditions such as temperature and humidity. Given the high value of the animals and the potential economic loss if environmental parameters deviate, including a temperature spike that could cause animal mortality, this scenario features denser node deployment, higher sampling frequency, and higher-value data packets. 
-
-**Topology Structure:**  
-![Animal House Topology](./images/animal_house_topology.png)
 
 # Usage
 If you need to run this project for recommending maintenance strategy of WSNs, then only need to configure [runtime environment](#runtime-environment)。
@@ -48,6 +42,7 @@ If you need to run this project for recommending maintenance strategy of WSNs, t
 |-- simulated_annealing.py     // Simulated Annealing Algorithm
 |-- evaluation.py            // Evaluation of maintenance strategies
 ```
+
 
 
 
